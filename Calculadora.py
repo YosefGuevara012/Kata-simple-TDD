@@ -4,6 +4,8 @@ class Calculadora:
         if cadena=="":
             return 0
         elif "," in cadena:
+            cadena = cadena.replace("&",",")
+            cadena = cadena.replace(":", ",")
             numeros = cadena.split(",")
             suma = 0
             for num in numeros:
